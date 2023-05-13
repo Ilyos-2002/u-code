@@ -1,5 +1,7 @@
-import { Box, Button, IconButton, Typography } from "@mui/material";
+import { Box, Button, IconButton, ImageListItem, Typography } from "@mui/material";
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import { Link } from "react-router-dom";
+// import { Img } from "./waist-up-shot-pretty-girl-smiles-pleasantly_273609-28224 1.png"
 
 export function Intro() {
     return (
@@ -15,14 +17,26 @@ export function Intro() {
                 </Typography>
                 <Box display={"flex"} gap={"25px"}>
                     <Button variant="contained" color="success">All Courses</Button>
-                    <IconButton aria-label="play" color="" size="medium" style={{ background: "white" }}>
-                        <PlayCircleIcon />
+                    <Link>
+                        <IconButton aria-label="play" color="" size="medium" style={{ background: "white" }}>
+                            <PlayCircleIcon />
 
-                    </IconButton>
-                    <Typography variant="h5">  Play Video</Typography>
+                        </IconButton>
+                        <Typography variant="h5">  Play Video</Typography>
+                    </Link>
                 </Box>
             </Box>
-            <Box></Box>
+            <Box>
+                <ImageListItem>
+                    <img
+                        src=""
+
+                        loading="lazy"
+                    />
+                </ImageListItem>
+                {/* <img src={"htpps://picsum.photos/"} alt="Apap" /> */}
+
+            </Box>
 
         </Box>
     )
